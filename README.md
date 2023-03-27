@@ -2,10 +2,12 @@
 
 Demo Go app {"Hello" : "world!"} for testing purpose.
 
+
 ## Deploy
 
-app.yaml - Creates deployment
+app.yaml - Creates deployment\
 ser.yaml - Creates Service 
+
 
 ## Requirements
 
