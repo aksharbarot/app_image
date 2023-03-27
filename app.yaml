@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-image
+  namespace: myns
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: app-image
+  template:
+    metadata:
+      labels:
+        name: app-image
+    spec:
+      containers:
+      - name: application
+        image: axar1990/app_image:1.0
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 8080
